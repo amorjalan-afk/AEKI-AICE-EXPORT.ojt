@@ -1,1 +1,147 @@
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEKI AICE EKSPOR KOPI SUMUT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Untuk ikon -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- CDN untuk Chart.js -->
+</head>
+<body>
+    <header style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x400?text=Kopi+Sumatra'); background-size: cover; background-position: center;">
+        <div class="header-content">
+            <h1>AEKI AICE EKSPOR KOPI SUMUT</h1>
+            <h2>Arabica Premium Green Coffee Beans Sumatra Mandheling</h2>
+            <p>Explore kualitas kopi terbaik dari Sumatera Utara. Klik untuk lihat detail lebih lanjut!</p>
+            <button onclick="scrollToSection('dashboard')">Mulai Eksplor</button>
+        </div>
+    </header>
+    
+    <main>
+        <section id="dashboard" class="animated-section">
+            <h3>Selamat Datang di Dashboard Kami</h3>
+            <p>Kelola stok, lihat penjualan, dan temukan karakteristik kopi premium kami. Mari kita eksplor lebih dalam!</p>
+            
+            <!-- Stok Barang Masuk -->
+            <div class="card animated-card">
+                <h4><i class="fas fa-arrow-down"></i> Stok Barang Masuk</h4>
+                <img src="https://placehold.co/300x200?text=Coffee+Beans" alt="Gambar Kopi" class="card-image">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Jumlah (kg)</th>
+                            <th>Sumber</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/10/2023</td>
+                            <td>500</td>
+                            <td>Petani Lokal</td>
+                        </tr>
+                        <tr>
+                            <td>15/10/2023</td>
+                            <td>300</td>
+                            <td>Import</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="alert('Detail stok lengkap akan ditampilkan di update selanjutnya!')">Lihat Selengkapnya</button>
+            </div>
+            
+            <!-- Barang Keluar -->
+            <div class="card animated-card">
+                <h4><i class="fas fa-arrow-up"></i> Barang Keluar</h4>
+                <img src="https://placehold.co/300x200?text=Export+Coffee" alt="Gambar Ekspor Kopi" class="card-image">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Jumlah (kg)</th>
+                            <th>Tujuan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>05/10/2023</td>
+                            <td>200</td>
+                            <td>Eksport ke Eropa</td>
+                        </tr>
+                        <tr>
+                            <td>20/10/2023</td>
+                            <td>150</td>
+                            <td>Penjualan Lokal</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="alert('Lihat riwayat barang keluar lengkap!')">Lihat Selengkapnya</button>
+            </div>
+            
+            <!-- Penjualan -->
+            <div class="card animated-card">
+                <h4><i class="fas fa-chart-line"></i> Penjualan</h4>
+                <img src="https://placehold.co/300x200?text=Sales+Graph" alt="Gambar Penjualan" class="card-image">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bulan</th>
+                            <th>Jumlah Penjualan (kg)</th>
+                            <th>Hasil (Rp)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>September 2023</td>
+                            <td>400</td>
+                            <td>2,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>Oktober 2023</td>
+                            <td>350</td>
+                            <td>1,750,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <canvas id="salesChart" width="400" height="200"></canvas>
+                <button onclick="alert('Analisis penjualan mendalam tersedia!')">Lihat Analisis</button>
+            </div>
+            
+            <!-- Karakteristik Kopi -->
+            <div class="card animated-card">
+                <h4><i class="fas fa-leaf"></i> Karakteristik Kopi</h4>
+                <img src="https://placehold.co/300x200?text=Coffee+Characteristics" alt="Gambar Karakteristik Kopi" class="card-image">
+                <ul>
+                    <li><strong>Aroma:</strong> Fresh nutty (aroma segar dengan nuansa kacang).</li>
+                    <li><strong>Flavor:</strong> Complex coffee flavor with vanilla and spicy notes.</li>
+                    <li><strong>Acidity:</strong> Light acidity (asam ringan).</li>
+                    <li><strong>Body:</strong> Medium (tekstur sedang).</li>
+                    <li><strong>Cupping Score:</strong> 84-85 (skor penilaian tinggi).</li>
+                </ul>
+                <button onclick="scrollToSection('spesifikasi')">Baca Lebih Lanjut</button>
+            </div>
+            
+            <!-- Spesifikasi Kopi -->
+            <div class="card animated-card" id="spesifikasi">
+                <h4><i class="fas fa-info-circle"></i> Spesifikasi Kopi</h4>
+                <img src="https://placehold.co/300x200?text=Coffee+Specs" alt="Gambar Spesifikasi Kopi" class="card-image">
+                <ul>
+                    <li><strong>Jenis:</strong> Arabica Premium Green Coffee Beans.</li>
+                    <li><strong>Asal:</strong> Sumatra Mandheling, Sumatera Utara, Indonesia.</li>
+                    <li><strong>Kualitas:</strong> 100% organik, dipetik manual.</li>
+                    <li><strong>Kemasan:</strong> 1 kg per kantong, kedap udara.</li>
+                    <li><strong>Kelembaban:</strong> Maksimal 12%.</li>
+                </ul>
+                <button onclick="alert('Hubungi kami untuk pesanan!')">Hubungi Kami</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 AEKI AICE EKSPOR KOPI SUMUT. <a href="#dashboard">Kembali ke Atas</a></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
