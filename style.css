@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(to bottom, #f0e6d4, #C28E5D); /* Gradasi krem ke coklat emas */
+    background: linear-gradient(to bottom, #f0e6d4, #FFD700); /* Gradasi krem ke emas */
     color: #333;
     line-height: 1.6;
 }
@@ -18,11 +18,10 @@ header {
     color: white;
     text-align: center;
     padding: 100px 20px;
-    position: relative;
 }
 
 .header-content {
-    background: linear-gradient(135deg, rgba(46, 125, 50, 0.8), rgba(194, 142, 93, 0.8)); /* Gradasi hijau ke coklat emas */
+    background: linear-gradient(135deg, #8B0000, #39FF14); /* Gradasi merah ke hijau neon */
     padding: 20px;
     border-radius: 10px;
 }
@@ -30,80 +29,50 @@ header {
 header h1 {
     font-size: 3em;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    color: #FFA500; /* Aksen oranye cerah */
-}
-
-header h2 {
-    font-size: 2em;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    color: white;
-}
-
-header p {
-    font-size: 1.2em;
-    color: #f0e6d4; /* Krem cerah */
+    color: #FFD700; /* Emas cerah */
 }
 
 header button {
-    background: #2E7D32; /* Hijau cerah */
-    color: white;
+    background: #39FF14; /* Hijau neon */
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s;
 }
 
 header button:hover {
-    background: #FFA500; /* Oranye saat hover */
-    transform: scale(1.05);
-}
-
-main {
-    padding: 40px 20px;
-}
-
-#dashboard {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    background: #FFD700; /* Emas */
 }
 
 .card {
-    background: linear-gradient(135deg, white, #f9f1e7); /* Gradasi putih ke krem */
+    background: linear-gradient(135deg, white, #8B0000); /* Gradasi putih ke merah */
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(194, 142, 93, 0.3); /* Bayangan coklat emas */
 }
 
 .card h4 {
-    color: #2E7D32; /* Hijau cerah */
+    color: #39FF14; /* Hijau neon */
 }
 
 table th {
-    background: #2E7D32; /* Hijau cerah */
+    background: #8B0000; /* Merah */
     color: white;
 }
 
 button {
-    background: #C28E5D; /* Coklat emas */
-    color: white;
+    background: #FFD700; /* Emas */
+    color: black;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background: #FFA500; /* Oranye cerah */
-    transform: scale(1.05);
+    background: #39FF14; /* Hijau neon */
 }
 
-/* Sisanya sama seperti sebelumnya */
+/* Sisanya sama */
