@@ -21,7 +21,7 @@
     <main>
         <section id="dashboard" class="animated-section">
             <h3>Selamat Datang di Dashboard Kami</h3>
-            <p>Kelola stok, lihat penjualan, dan temukan karakteristik kopi premium kami dengan data lengkap. Mari kita eksplor lebih dalam!</p>
+            <p>Kelola stok, lihat penjualan dengan grafik menarik, dan temukan karakteristik kopi premium kami.</p>
             
             <!-- Stok Barang Masuk -->
             <div class="card animated-card">
@@ -58,7 +58,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <button onclick="alert('Detail stok lengkap akan ditampilkan di update selanjutnya!')">Lihat Selengkapnya</button>
+                <button onclick="alert('Detail stok lengkap!')">Lihat Selengkapnya</button>
             </div>
             
             <!-- Barang Keluar -->
@@ -96,7 +96,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <button onclick="alert('Lihat riwayat barang keluar lengkap!')">Lihat Selengkapnya</button>
+                <button onclick="alert('Lihat riwayat barang keluar!')">Lihat Selengkapnya</button>
             </div>
             
             <!-- Penjualan -->
@@ -134,8 +134,9 @@
                         </tr>
                     </tbody>
                 </table>
-                <canvas id="salesChart" width="400" height="200"></canvas>
-                <button onclick="alert('Analisis penjualan mendalam tersedia!')">Lihat Analisis</button>
+                <canvas id="salesBarChart" width="400" height="200"></canvas> <!-- Bar Chart -->
+                <canvas id="salesPieChart" width="400" height="200"></canvas> <!-- Pie Chart baru -->
+                <button onclick="alert('Analisis penjualan!')">Lihat Analisis</button>
             </div>
             
             <!-- Karakteristik Kopi -->
@@ -144,10 +145,10 @@
                 <img src="https://placehold.co/300x200?text=Coffee+Characteristics" alt="Gambar Karakteristik Kopi" class="card-image">
                 <ul>
                     <li><strong>Aroma:</strong> Fresh nutty, dengan nuansa earthy.</li>
-                    <li><strong>Flavor:</strong> Complex coffee flavor with vanilla and spicy notes, plus sedikit coklat.</li>
-                    <li><strong>Acidity:</strong> Light acidity, segar dan seimbang.</li>
-                    <li><strong>Body:</strong> Medium, terasa kaya.</li>
-                    <li><strong>Cupping Score:</strong> 84-85, kualitas tinggi.</li>
+                    <li><strong>Flavor:</strong> Complex coffee flavor with vanilla and spicy notes.</li>
+                    <li><strong>Acidity:</strong> Light acidity.</li>
+                    <li><strong>Body:</strong> Medium.</li>
+                    <li><strong>Cupping Score:</strong> 84-85.</li>
                 </ul>
                 <button onclick="scrollToSection('spesifikasi')">Baca Lebih Lanjut</button>
             </div>
@@ -157,13 +158,13 @@
                 <h4><i class="fas fa-info-circle"></i> Spesifikasi Kopi</h4>
                 <img src="https://placehold.co/300x200?text=Coffee+Specs" alt="Gambar Spesifikasi Kopi" class="card-image">
                 <ul>
-                    <li><strong>Jenis:</strong> Arabica Premium Green Coffee Beans.</li>
-                    <li><strong>Asal:</strong> Sumatra Mandheling, Sumatera Utara.</li>
-                    <li><strong>Kualitas:</strong> 100% organik, dipetik manual, tanpa pestisida.</li>
-                    <li><strong>Kemasan:</strong> 1 kg per kantong, kedap udara.</li>
-                    <li><strong>Kelembaban:</strong> Maksimal 12%, altitude 1200-1500 mdpl.</li>
+                    <li><strong>Jenis:</strong> Arabica Premium.</li>
+                    <li><strong>Asal:</strong> Sumatra Mandheling.</li>
+                    <li><strong>Kualitas:</strong> 100% organik.</li>
+                    <li><strong>Kemasan:</strong> 1 kg kedap udara.</li>
+                    <li><strong>Kelembaban:</strong> Maksimal 12%.</li>
                 </ul>
-                <button onclick="alert('Hubungi kami untuk pesanan!')">Hubungi Kami</button>
+                <button onclick="alert('Hubungi kami!')">Hubungi Kami</button>
             </div>
         </section>
     </main>
