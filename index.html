@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AEKI AICE EKSPOR KOPI SUMUT</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Untuk ikon -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- CDN untuk Chart.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <header style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x400?text=Kopi+Sumatra'); background-size: cover; background-position: center;">
+    <header style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x400?text=Kopi+Sumatra'); background-size: cover;">
         <div class="header-content">
             <h1>AEKI AICE EKSPOR KOPI SUMUT</h1>
             <h2>Arabica Premium Green Coffee Beans Sumatra Mandheling</h2>
@@ -21,7 +21,7 @@
     <main>
         <section id="dashboard" class="animated-section">
             <h3>Selamat Datang di Dashboard Kami</h3>
-            <p>Kelola stok, lihat penjualan, dan temukan karakteristik kopi premium kami. Mari kita eksplor lebih dalam!</p>
+            <p>Kelola stok, lihat penjualan, dan temukan karakteristik kopi premium kami dengan data lengkap. Mari kita eksplor lebih dalam!</p>
             
             <!-- Stok Barang Masuk -->
             <div class="card animated-card">
@@ -44,6 +44,16 @@
                         <tr>
                             <td>15/10/2023</td>
                             <td>300</td>
+                            <td>Import</td>
+                        </tr>
+                        <tr>
+                            <td>25/10/2023</td>
+                            <td>400</td>
+                            <td>Petani Lokal</td>
+                        </tr>
+                        <tr>
+                            <td>05/11/2023</td>
+                            <td>250</td>
                             <td>Import</td>
                         </tr>
                     </tbody>
@@ -74,6 +84,16 @@
                             <td>150</td>
                             <td>Penjualan Lokal</td>
                         </tr>
+                        <tr>
+                            <td>10/11/2023</td>
+                            <td>180</td>
+                            <td>Eksport ke Asia</td>
+                        </tr>
+                        <tr>
+                            <td>15/11/2023</td>
+                            <td>120</td>
+                            <td>Penjualan Lokal</td>
+                        </tr>
                     </tbody>
                 </table>
                 <button onclick="alert('Lihat riwayat barang keluar lengkap!')">Lihat Selengkapnya</button>
@@ -102,6 +122,16 @@
                             <td>350</td>
                             <td>1,750,000</td>
                         </tr>
+                        <tr>
+                            <td>November 2023</td>
+                            <td>450</td>
+                            <td>2,250,000</td>
+                        </tr>
+                        <tr>
+                            <td>Desember 2023</td>
+                            <td>500</td>
+                            <td>2,500,000</td>
+                        </tr>
                     </tbody>
                 </table>
                 <canvas id="salesChart" width="400" height="200"></canvas>
@@ -113,11 +143,11 @@
                 <h4><i class="fas fa-leaf"></i> Karakteristik Kopi</h4>
                 <img src="https://placehold.co/300x200?text=Coffee+Characteristics" alt="Gambar Karakteristik Kopi" class="card-image">
                 <ul>
-                    <li><strong>Aroma:</strong> Fresh nutty (aroma segar dengan nuansa kacang).</li>
-                    <li><strong>Flavor:</strong> Complex coffee flavor with vanilla and spicy notes.</li>
-                    <li><strong>Acidity:</strong> Light acidity (asam ringan).</li>
-                    <li><strong>Body:</strong> Medium (tekstur sedang).</li>
-                    <li><strong>Cupping Score:</strong> 84-85 (skor penilaian tinggi).</li>
+                    <li><strong>Aroma:</strong> Fresh nutty, dengan nuansa earthy.</li>
+                    <li><strong>Flavor:</strong> Complex coffee flavor with vanilla and spicy notes, plus sedikit coklat.</li>
+                    <li><strong>Acidity:</strong> Light acidity, segar dan seimbang.</li>
+                    <li><strong>Body:</strong> Medium, terasa kaya.</li>
+                    <li><strong>Cupping Score:</strong> 84-85, kualitas tinggi.</li>
                 </ul>
                 <button onclick="scrollToSection('spesifikasi')">Baca Lebih Lanjut</button>
             </div>
@@ -128,10 +158,10 @@
                 <img src="https://placehold.co/300x200?text=Coffee+Specs" alt="Gambar Spesifikasi Kopi" class="card-image">
                 <ul>
                     <li><strong>Jenis:</strong> Arabica Premium Green Coffee Beans.</li>
-                    <li><strong>Asal:</strong> Sumatra Mandheling, Sumatera Utara, Indonesia.</li>
-                    <li><strong>Kualitas:</strong> 100% organik, dipetik manual.</li>
+                    <li><strong>Asal:</strong> Sumatra Mandheling, Sumatera Utara.</li>
+                    <li><strong>Kualitas:</strong> 100% organik, dipetik manual, tanpa pestisida.</li>
                     <li><strong>Kemasan:</strong> 1 kg per kantong, kedap udara.</li>
-                    <li><strong>Kelembaban:</strong> Maksimal 12%.</li>
+                    <li><strong>Kelembaban:</strong> Maksimal 12%, altitude 1200-1500 mdpl.</li>
                 </ul>
                 <button onclick="alert('Hubungi kami untuk pesanan!')">Hubungi Kami</button>
             </div>
