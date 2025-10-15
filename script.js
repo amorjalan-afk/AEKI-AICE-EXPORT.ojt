@@ -3,28 +3,35 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
     };
     
-    const ctx = document.getElementById('salesChart').getContext('2d');
-    const salesData = {
-        labels: ['September 2023', 'Oktober 2023', 'November 2023', 'Desember 2023'],
-        datasets: [{
-            label: 'Jumlah Penjualan (kg)',
-            data: [400, 350, 450, 500],
-            backgroundColor: ['#2E7D32', '#C28E5D', '#FFA500', '#4CAF50'],
-            borderColor: '#2E7D32',
-            borderWidth: 2,
-            borderRadius: 5
-        }]
-    };
-    
-    const salesChart = new Chart(ctx, {
+    // Bar Chart
+    const barCtx = document.getElementById('salesBarChart').getContext('2d');
+    const barChart = new Chart(barCtx, {
         type: 'bar',
-        data: salesData,
-        options: {
-            responsive: true,
-            animation: { duration: 1000, easing: 'easeInOutBounce' },
-            scales: { y: { beginAtZero: true, title: { display: true, text: 'Jumlah (kg)' } },
-                     x: { title: { display: true, text: 'Bulan' } } },
-            plugins: { tooltip: { backgroundColor: 'rgba(46, 125, 50, 0.8)' } }
-        }
+        data: {
+            labels: ['September 2023', 'Oktober 2023', 'November 2023', 'Desember 2023'],
+            datasets: [{
+                label: 'Jumlah Penjualan (kg)',
+                data: [400, 350, 450, 500],
+                backgroundColor: ['#39FF14', '#8B0000', '#FFD700', '#39FF14'],
+                borderColor: '#39FF14',
+                borderWidth: 2
+            }]
+        },
+        options: { responsive: true }
+    });
+    
+    // Pie Chart Baru
+    const pieCtx = document.getElementById('salesPieChart').getContext('2d');
+    const pieChart = new Chart(pieCtx, {
+        type: 'pie',
+        data: {
+            labels: ['September', 'Oktober', 'November', 'Desember'],
+            datasets: [{
+                label: 'Distribusi Penjualan (%)',
+                data: [25, 20, 30, 25],  // Persentase dummy
+                backgroundColor: ['#39FF14', '#8B0000', '#FFD700', '#39FF14']
+            }]
+        },
+        options: { responsive: true }
     });
 });
